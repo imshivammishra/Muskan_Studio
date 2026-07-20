@@ -4,17 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Muskan — Luxury Fashion Designer</title>
-  <meta name="description" content="Muskan is an award-winning luxury fashion designer crafting bespoke haute couture. Explore collections at muskan.studio.">
+  <meta name="description" content="Muskan is an award-winning luxury fashion designer crafting bespoke haute couture.">
   <meta property="og:title" content="Muskan — Luxury Fashion Designer">
   <meta property="og:description" content="Award-winning luxury fashion designer. Bespoke collections and haute couture artistry.">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230d0d0d'/><text x='16' y='22' font-family='serif' font-size='18' fill='%23c9a96e' text-anchor='middle'>M</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230a0a0a'/><text x='16' y='22' font-family='serif' font-size='18' fill='%23c9a96e' text-anchor='middle'>M</text></svg>">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <nav class="nav nav--dark">
+  <!-- NAV -->
+  <nav class="nav">
     <a href="index.html" class="nav__logo">Muskan<span>.</span></a>
     <div class="nav__links">
       <a href="index.html" class="active">Home</a>
@@ -28,28 +27,27 @@
   </nav>
   <div class="mobile-menu">
     <button class="mobile-menu__close" aria-label="Close menu">&times;</button>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="blog.html">Journal</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="portfolio.html">Portfolio</a>
+    <a href="gallery.html">Gallery</a><a href="blog.html">Journal</a><a href="contact.html">Contact</a>
   </div>
 
-  <section class="hero">
-    <div class="hero__bg" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1920&q=85')"></div>
-    <div class="hero__content container">
-      <div class="hero__tag">Award-Winning Fashion Designer</div>
-      <h1 class="hero__title">Muskan</h1>
-      <p class="hero__sub">Haute Couture &middot; Editorial Vision &middot; Luxury Experiences</p>
-      <div class="hero__btns">
-        <a href="portfolio.html" class="btn btn--gold btn--pill">Explore Work</a>
-        <a href="gallery.html" class="btn btn--outline-white btn--pill">View Collections</a>
+  <!-- HERO — Fullscreen portrait -->
+  <section class="home-hero">
+    <div class="home-hero__img">
+      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1200&q=85" alt="Fashion portrait" loading="eager">
+    </div>
+    <div class="home-hero__content">
+      <div class="home-hero__tag">Award-Winning Fashion Designer</div>
+      <h1 class="home-hero__title">Muskan</h1>
+      <p class="home-hero__sub">Haute Couture &middot; Editorial Vision &middot; Luxury Experiences</p>
+      <div class="home-hero__btns">
+        <a href="portfolio.html" class="btn btn--dark btn--pill">Explore Work</a>
+        <a href="gallery.html" class="btn btn--ghost btn--pill">View Collections</a>
       </div>
     </div>
-    <div class="hero__scroll"><span>Scroll</span><i></i></div>
   </section>
 
+  <!-- PORTFOLIO -->
   <section class="section section--cream">
     <div class="container">
       <div class="sec-head">
@@ -57,117 +55,148 @@
         <h2 class="sec-title">Selected Collections</h2>
         <div class="sec-line"></div>
       </div>
-      <div class="pf-grid">
-        <a href="portfolio.html" class="pf-card pf-card--wide">
-          <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=1400&q=85" alt="Silk & Shadow editorial" loading="lazy">
-          <div class="pf-card__info"><div class="pf-card__tag">SS 2026 — Haute Couture</div><div class="pf-card__title">Silk & Shadow</div></div>
+      <div class="home-portrait-grid">
+        <a href="portfolio.html" class="home-portrait-card">
+          <div class="home-portrait-card__img">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=700&q=85" alt="Collection" loading="lazy">
+          </div>
+          <div class="home-portrait-card__body">
+            <div class="home-portrait-card__tag">SS 2026 — Haute Couture</div>
+            <h3 class="home-portrait-card__title">Silk & Shadow</h3>
+            <p class="home-portrait-card__desc">A meditation on light and texture, woven through hand-embroidered organza.</p>
+          </div>
         </a>
-        <a href="portfolio.html" class="pf-card">
-          <img src="https://images.unsplash.com/photo-1518622358385-8ea7d0794bf6?w=800&q=85" alt="Lumière" loading="lazy">
-          <div class="pf-card__info"><div class="pf-card__tag">AW 2025 — Ready-to-Wear</div><div class="pf-card__title">Lumière</div></div>
+        <a href="portfolio.html" class="home-portrait-card">
+          <div class="home-portrait-card__img">
+            <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=700&q=85" alt="Collection" loading="lazy">
+          </div>
+          <div class="home-portrait-card__body">
+            <div class="home-portrait-card__tag">AW 2025 — Ready-to-Wear</div>
+            <h3 class="home-portrait-card__title">Lumière</h3>
+            <p class="home-portrait-card__desc">Where light meets fabric — sculptural silhouettes in silk and wool.</p>
+          </div>
         </a>
-        <a href="portfolio.html" class="pf-card">
-          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=85" alt="Noir Absolu" loading="lazy">
-          <div class="pf-card__info"><div class="pf-card__tag">Resort 2026</div><div class="pf-card__title">Noir Absolu</div></div>
+        <a href="portfolio.html" class="home-portrait-card">
+          <div class="home-portrait-card__img">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=700&q=85" alt="Collection" loading="lazy">
+          </div>
+          <div class="home-portrait-card__body">
+            <div class="home-portrait-card__tag">Resort 2026</div>
+            <h3 class="home-portrait-card__title">Noir Absolu</h3>
+            <p class="home-portrait-card__desc">The poetry of black — minimal, precise, unforgettable.</p>
+          </div>
         </a>
-        <a href="portfolio.html" class="pf-card pf-card--wide">
-          <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=1400&q=85" alt="Jardin Secret" loading="lazy">
-          <div class="pf-card__info"><div class="pf-card__tag">Bridal Couture 2025</div><div class="pf-card__title">Jardin Secret</div></div>
+        <a href="portfolio.html" class="home-portrait-card">
+          <div class="home-portrait-card__img">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=700&q=85" alt="Collection" loading="lazy">
+          </div>
+          <div class="home-portrait-card__body">
+            <div class="home-portrait-card__tag">Bridal Couture 2025</div>
+            <h3 class="home-portrait-card__title">Jardin Secret</h3>
+            <p class="home-portrait-card__desc">Romantic bridal couture — hand-embroidered florals on Italian tulle.</p>
+          </div>
         </a>
-        <a href="portfolio.html" class="pf-card">
-          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=85" alt="Rêverie" loading="lazy">
-          <div class="pf-card__info"><div class="pf-card__tag">Editorial — Vogue Italia</div><div class="pf-card__title">Rêverie</div></div>
-        </a>
-        <a href="portfolio.html" class="pf-card">
-          <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=85" alt="Monsoon" loading="lazy">
-          <div class="pf-card__info"><div class="pf-card__tag">Editorial — Harper's Bazaar</div><div class="pf-card__title">Monsoon</div></div>
-        </a>
+      </div>
+      <div style="text-align:center;margin-top:3rem">
+        <a href="portfolio.html" class="btn btn--dark btn--pill">View All Collections</a>
       </div>
     </div>
   </section>
 
+  <!-- ABOUT -->
   <section class="section">
     <div class="container">
-      <div class="about-strip">
-        <div class="about-strip__img">
-          <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=900&q=85" alt="Muskan atelier" loading="lazy">
+      <div class="home-about">
+        <div class="home-about__img">
+          <img src="https://images.unsplash.com/photo-1581044777550-4cfa607b2f0e?w=800&q=85" alt="Muskan" loading="lazy">
         </div>
-        <div>
+        <div class="home-about__content">
           <span class="sec-label">02 — About</span>
-          <p class="about-strip__text">Where <em>craftsmanship</em> meets <em>vision</em>, and every stitch tells a story of luxury.</p>
-          <p class="about-strip__desc">Muskan is a visionary fashion designer trained at the finest ateliers of Paris and inspired by the rich textile heritage of India. Each collection is a meditation on femininity, strength, and the quiet power of exquisite craftsmanship.</p>
-          <a href="about.html" class="btn btn--ghost btn--pill">Read Full Story</a>
+          <h2 class="sec-title" style="margin-bottom:1.5rem">The Art of Quiet Luxury</h2>
+          <p class="home-about__text">Where <em>craftsmanship</em> meets <em>vision</em>, and every stitch tells a story of luxury.</p>
+          <p class="home-about__desc">Muskan is a visionary fashion designer trained at the finest ateliers of Paris and inspired by the rich textile heritage of India. Each collection is a meditation on femininity, strength, and the quiet power of exquisite craftsmanship.</p>
           <div class="stats">
             <div><div class="stat__num">12</div><div class="stat__label">Years Experience</div></div>
             <div><div class="stat__num">48</div><div class="stat__label">Collections</div></div>
             <div><div class="stat__num">15</div><div class="stat__label">Awards Won</div></div>
           </div>
+          <a href="about.html" class="btn btn--ghost btn--pill" style="margin-top:2.5rem">Read Full Story</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section section--dark" style="padding:clamp(5rem,10vw,10rem) 0">
-    <div class="container" style="margin-bottom:3rem">
-      <div class="sec-head" style="text-align:center">
-        <span class="sec-label">03 — Editorial</span>
-        <h2 class="sec-title" style="color:var(--white)">Moments in Fashion</h2>
-        <div class="sec-line" style="margin:1.5rem auto 0"></div>
-      </div>
-    </div>
-    <div class="marquee-wrap">
-      <div class="marquee">
-        <div class="marquee-item"><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=500&q=80" alt="Editorial" loading="lazy"></div>
-        <div class="marquee-item"><img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=500&q=80" alt="Fashion week" loading="lazy"></div>
-        <div class="marquee-item"><img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=500&q=80" alt="Couture detail" loading="lazy"></div>
-        <div class="marquee-item"><img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=500&q=80" alt="Runway" loading="lazy"></div>
-        <div class="marquee-item"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500&q=80" alt="Portrait" loading="lazy"></div>
-        <div class="marquee-item"><img src="https://images.unsplash.com/photo-1518622358385-8ea7d0794bf6?w=500&q=80" alt="Fabric" loading="lazy"></div>
-        <div class="marquee-item"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=500&q=80" alt="Editorial" loading="lazy"></div>
-        <div class="marquee-item"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&q=80" alt="Model" loading="lazy"></div>
-        <div class="marquee-item"><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=500&q=80" alt="Editorial" loading="lazy"></div>
-        <div class="marquee-item"><img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=500&q=80" alt="Fashion week" loading="lazy"></div>
-        <div class="marquee-item"><img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=500&q=80" alt="Couture detail" loading="lazy"></div>
-        <div class="marquee-item"><img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=500&q=80" alt="Runway" loading="lazy"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
+  <!-- SERVICES -->
+  <section class="section section--cream">
     <div class="container">
-      <div class="sec-head">
-        <span class="sec-label">04 — Services</span>
+      <div class="sec-head" style="text-align:center">
+        <span class="sec-label">03 — Services</span>
         <h2 class="sec-title">What We Offer</h2>
-        <div class="sec-line"></div>
+        <div class="sec-line" style="margin:1.5rem auto 0"></div>
       </div>
       <div class="svc-grid">
         <div class="svc-card"><div class="svc-card__num">01</div><h3 class="svc-card__title">Fashion Design</h3><p class="svc-card__desc">Bespoke haute couture and ready-to-wear collections crafted with artisanal expertise.</p></div>
         <div class="svc-card"><div class="svc-card__num">02</div><h3 class="svc-card__title">Creative Direction</h3><p class="svc-card__desc">End-to-end creative vision for fashion campaigns, editorial shoots, and brand storytelling.</p></div>
         <div class="svc-card"><div class="svc-card__num">03</div><h3 class="svc-card__title">Luxury Branding</h3><p class="svc-card__desc">Visual identity systems and luxury positioning that elevate brands to high fashion.</p></div>
-        <div class="svc-card"><div class="svc-card__num">04</div><h3 class="svc-card__title">Editorial Styling</h3><p class="svc-card__desc">Fashion editorial concepts for magazine features and campaign imagery.</p></div>
-        <div class="svc-card"><div class="svc-card__num">05</div><h3 class="svc-card__title">Fashion Illustration</h3><p class="svc-card__desc">Hand-drawn and digital illustrations with artistic precision and poetic beauty.</p></div>
-        <div class="svc-card"><div class="svc-card__num">06</div><h3 class="svc-card__title">Collection Development</h3><p class="svc-card__desc">Comprehensive development from research and sourcing to final production.</p></div>
       </div>
     </div>
   </section>
 
-  <section class="section section--cream" style="overflow:hidden">
+  <!-- PORTRAIT GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-label">04 — Editorial</span>
+        <h2 class="sec-title">Moments in Fashion</h2>
+        <div class="sec-line"></div>
+      </div>
+      <div class="home-portrait-mosaic">
+        <a href="gallery.html" class="home-portrait-mosaic__item home-portrait-mosaic__item--tall">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=85" alt="Portrait" loading="lazy">
+          <div class="home-portrait-mosaic__overlay"><span>View Gallery</span></div>
+        </a>
+        <a href="gallery.html" class="home-portrait-mosaic__item">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&q=85" alt="Portrait" loading="lazy">
+          <div class="home-portrait-mosaic__overlay"><span>View Gallery</span></div>
+        </a>
+        <a href="gallery.html" class="home-portrait-mosaic__item">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&q=85" alt="Portrait" loading="lazy">
+          <div class="home-portrait-mosaic__overlay"><span>View Gallery</span></div>
+        </a>
+        <a href="gallery.html" class="home-portrait-mosaic__item home-portrait-mosaic__item--tall">
+          <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=600&q=85" alt="Portrait" loading="lazy">
+          <div class="home-portrait-mosaic__overlay"><span>View Gallery</span></div>
+        </a>
+        <a href="gallery.html" class="home-portrait-mosaic__item">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600&q=85" alt="Portrait" loading="lazy">
+          <div class="home-portrait-mosaic__overlay"><span>View Gallery</span></div>
+        </a>
+        <a href="gallery.html" class="home-portrait-mosaic__item">
+          <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=600&q=85" alt="Portrait" loading="lazy">
+          <div class="home-portrait-mosaic__overlay"><span>View Gallery</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section--cream">
     <div class="container">
       <div class="sec-head">
         <span class="sec-label">05 — Praise</span>
         <h2 class="sec-title">Words of Affirmation</h2>
         <div class="sec-line"></div>
       </div>
-    </div>
-    <div class="tml-track">
-      <div class="tml-card"><p class="tml-card__txt">"Muskan has an extraordinary ability to translate emotion into fabric. Working with her felt like watching poetry take physical form."</p><div class="tml-card__name">Isabelle Laurent</div><div class="tml-card__role">Creative Director, Maison Lumière</div></div>
-      <div class="tml-card"><p class="tml-card__txt">"The collection was nothing short of breathtaking. Every piece told a story, and every detail was perfection."</p><div class="tml-card__name">Priya Mehta</div><div class="tml-card__role">Founder, Élan Vogue</div></div>
-      <div class="tml-card"><p class="tml-card__txt">"Her understanding of luxury goes beyond aesthetics. Muskan designs for the soul — and that makes her work unforgettable."</p><div class="tml-card__name">Chiara Romano</div><div class="tml-card__role">Fashion Editor, Vogue Italia</div></div>
-      <div class="tml-card"><p class="tml-card__txt">"Muskan's creative direction transformed our campaign into an art installation. We saw a 300% increase in engagement."</p><div class="tml-card__name">Alexandre Dubois</div><div class="tml-card__role">CEO, Atelier Noir</div></div>
-      <div class="tml-card"><p class="tml-card__txt">"A visionary. Muskan doesn't follow trends — she creates movements. Her bridal couture redefined modern elegance."</p><div class="tml-card__name">Aisha Khan</div><div class="tml-card__role">Director, Raas Couture</div></div>
+      <div class="tml-track">
+        <div class="tml-card"><p class="tml-card__txt">"Muskan has an extraordinary ability to translate emotion into fabric. Working with her felt like watching poetry take physical form."</p><div class="tml-card__name">Isabelle Laurent</div><div class="tml-card__role">Creative Director, Maison Lumière</div></div>
+        <div class="tml-card"><p class="tml-card__txt">"The collection was nothing short of breathtaking. Every piece told a story, and every detail was perfection."</p><div class="tml-card__name">Priya Mehta</div><div class="tml-card__role">Founder, Élan Vogue</div></div>
+        <div class="tml-card"><p class="tml-card__txt">"Her understanding of luxury goes beyond aesthetics. Muskan designs for the soul — and that makes her work unforgettable."</p><div class="tml-card__name">Chiara Romano</div><div class="tls-card__role">Fashion Editor, Vogue Italia</div></div>
+        <div class="tml-card"><p class="tml-card__txt">"A visionary. Muskan doesn't follow trends — she creates movements. Her bridal couture redefined modern elegance."</p><div class="tml-card__name">Aisha Khan</div><div class="tml-card__role">Director, Raas Couture</div></div>
+      </div>
     </div>
   </section>
 
+  <!-- AWARDS -->
   <section class="section">
     <div class="container">
       <div class="sec-head">
@@ -179,11 +208,10 @@
       <div class="awd-item"><div class="awd-item__yr">2025</div><div class="awd-item__title">ANDAM Fashion Prize — Finalist</div><div class="awd-item__org">ANDAM, Paris</div></div>
       <div class="awd-item"><div class="awd-item__yr">2024</div><div class="awd-item__title">Vogue India — Designer to Watch</div><div class="awd-item__org">Vogue India</div></div>
       <div class="awd-item"><div class="awd-item__yr">2024</div><div class="awd-item__title">LVMH Prize for Young Fashion Designers — Shortlist</div><div class="awd-item__org">LVMH</div></div>
-      <div class="awd-item"><div class="awd-item__yr">2023</div><div class="awd-item__title">International Woolmark Prize — Innovation Award</div><div class="awd-item__org">The Woolmark Company</div></div>
-      <div class="awd-item"><div class="awd-item__yr">2023</div><div class="awd-item__title">CFDA/Vogue Fashion Fund — Finalist</div><div class="awd-item__org">CFDA</div></div>
     </div>
   </section>
 
+  <!-- PRESS -->
   <section class="section section--cream">
     <div class="container">
       <div class="sec-head" style="text-align:center">
@@ -198,12 +226,11 @@
         <span class="press-name">W Magazine</span>
         <span class="press-name">Wallpaper*</span>
         <span class="press-name">Financial Times</span>
-        <span class="press-name">i-D</span>
-        <span class="press-name">Dazed</span>
       </div>
     </div>
   </section>
 
+  <!-- INSTAGRAM -->
   <section class="section">
     <div class="container">
       <div class="sec-head" style="text-align:center">
@@ -213,15 +240,16 @@
       </div>
     </div>
     <div class="insta-grid" style="margin-top:2.5rem">
-      <a href="https://www.instagram.com/muskan.studio" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=400&q=80" alt="Instagram" loading="lazy"></a>
-      <a href="https://www.instagram.com/muskan.studio" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400&q=80" alt="Instagram" loading="lazy"></a>
-      <a href="https://www.instagram.com/muskan.studio" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1518622358385-8ea7d0794bf6?w=400&q=80" alt="Instagram" loading="lazy"></a>
-      <a href="https://www.instagram.com/muskan.studio" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=400&q=80" alt="Instagram" loading="lazy"></a>
-      <a href="https://www.instagram.com/muskan.studio" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=400&q=80" alt="Instagram" loading="lazy"></a>
-      <a href="https://www.instagram.com/muskan.studio" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&q=80" alt="Instagram" loading="lazy"></a>
+      <a href="https://www.instagram.com/muskan.studio" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=85" alt="Instagram" loading="lazy"></a>
+      <a href="https://www.instagram.com/muskan.studio" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=85" alt="Instagram" loading="lazy"></a>
+      <a href="https://www.instagram.com/muskan.studio" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&q=85" alt="Instagram" loading="lazy"></a>
+      <a href="https://www.instagram.com/muskan.studio" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&q=85" alt="Instagram" loading="lazy"></a>
+      <a href="https://www.instagram.com/muskan.studio" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=400&q=85" alt="Instagram" loading="lazy"></a>
+      <a href="https://www.instagram.com/muskan.studio" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=400&q=85" alt="Instagram" loading="lazy"></a>
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section class="section section--cream">
     <div class="container">
       <div class="sec-head">
@@ -257,6 +285,7 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer__top">
