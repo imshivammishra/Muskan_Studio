@@ -3,638 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <title>Journal — Muskan | Fashion Insights &amp; Stories</title>
-  <meta name="description" content="Explore the world of luxury fashion through Muskan Studio's journal — insights on haute couture, craftsmanship, sustainability, and the art of design.">
-  <meta name="keywords" content="fashion journal, luxury fashion blog, haute couture insights, fashion design stories, Muskan Studio blog, artisanal fashion">
-  <meta name="author" content="Muskan">
-  <link rel="canonical" href="https://muskan.studio/blog.html">
-
-  <!-- OpenGraph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Journal — Muskan | Fashion Insights & Stories">
-  <meta property="og:description" content="Explore the world of luxury fashion through Muskan Studio's journal — insights on haute couture, craftsmanship, and the art of design.">
-  <meta property="og:url" content="https://muskan.studio/blog.html">
-  <meta property="og:image" content="https://muskan.studio/images/og-image.jpg">
-  <meta property="og:site_name" content="Muskan Studio">
-
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Journal — Muskan | Fashion Insights & Stories">
-  <meta name="twitter:description" content="Explore the world of luxury fashion through Muskan Studio's journal — insights on haute couture, craftsmanship, and the art of design.">
-  <meta name="twitter:image" content="https://muskan.studio/images/og-image.jpg">
-
-  <!-- Schema.org Blog -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "Muskan Studio Journal",
-    "description": "Fashion insights, stories, and perspectives from luxury fashion designer Muskan.",
-    "url": "https://muskan.studio/blog.html",
-    "author": {
-      "@type": "Person",
-      "name": "Muskan",
-      "url": "https://muskan.studio"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Muskan Studio",
-      "url": "https://muskan.studio"
-    },
-    "blogPost": [
-      {
-        "@type": "BlogPosting",
-        "headline": "The Art of Hand Embroidery",
-        "description": "Exploring the centuries-old craft that defines haute couture",
-        "datePublished": "2026-07-15",
-        "author": { "@type": "Person", "name": "Muskan" },
-        "timeRequired": "PT12M"
-      },
-      {
-        "@type": "BlogPosting",
-        "headline": "Paris Fashion Week: Spring 2026 Highlights",
-        "description": "Our debut collection and the moments that made it unforgettable",
-        "datePublished": "2026-06-10",
-        "author": { "@type": "Person", "name": "Muskan" },
-        "timeRequired": "PT8M"
-      },
-      {
-        "@type": "BlogPosting",
-        "headline": "Sustainable Luxury: Our Commitment",
-        "description": "How we're redefining luxury through responsible sourcing and artisanal preservation",
-        "datePublished": "2026-05-05",
-        "author": { "@type": "Person", "name": "Muskan" },
-        "timeRequired": "PT10M"
-      },
-      {
-        "@type": "BlogPosting",
-        "headline": "Behind the Seams: Creating Éclat",
-        "description": "A journey through the 200 hours that brought our latest collection to life",
-        "datePublished": "2026-04-12",
-        "author": { "@type": "Person", "name": "Muskan" },
-        "timeRequired": "PT15M"
-      },
-      {
-        "@type": "BlogPosting",
-        "headline": "Colour Theory in Fashion",
-        "description": "Understanding how colour psychology shapes the emotional landscape of a collection",
-        "datePublished": "2026-03-08",
-        "author": { "@type": "Person", "name": "Muskan" },
-        "timeRequired": "PT7M"
-      },
-      {
-        "@type": "BlogPosting",
-        "headline": "The Future of Indian Textiles",
-        "description": "How traditional Indian weaving techniques are influencing global luxury fashion",
-        "datePublished": "2026-02-14",
-        "author": { "@type": "Person", "name": "Muskan" },
-        "timeRequired": "PT9M"
-      }
-    ]
-  }
-  </script>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-
-  <link rel="stylesheet" href="src/css/main.css">
-
-  <style>
-    .journal-hero {
-      min-height: 60vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 12rem 2rem 6rem;
-      position: relative;
-    }
-    .journal-hero__number {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 0.7rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--accent, #b8860b);
-      margin-bottom: 1.5rem;
-    }
-    .journal-hero__title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(4rem, 10vw, 9rem);
-      font-weight: 300;
-      line-height: 0.95;
-      letter-spacing: -0.02em;
-      margin-bottom: 1.5rem;
-    }
-    .journal-hero__subtitle {
-      font-family: 'Inter', sans-serif;
-      font-size: 1rem;
-      font-weight: 300;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      opacity: 0.6;
-    }
-    .journal-hero__line {
-      width: 1px;
-      height: 80px;
-      background: var(--primary, #1a1a1a);
-      margin-top: 3rem;
-      opacity: 0.3;
-    }
-
-    .featured-article {
-      padding: 0 2rem 6rem;
-      max-width: 1400px;
-      margin: 0 auto;
-    }
-    .featured-article__inner {
-      position: relative;
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 3rem;
-      align-items: center;
-    }
-    .featured-article__image-wrap {
-      overflow: hidden;
-      aspect-ratio: 16 / 10;
-      position: relative;
-    }
-    .featured-article__image-wrap img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
-    .featured-article__image-wrap:hover img {
-      transform: scale(1.05);
-    }
-    .featured-article__label {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 0.65rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--accent, #b8860b);
-      margin-bottom: 1rem;
-    }
-    .featured-article__tag {
-      display: inline-block;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 0.6rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      border: 1px solid var(--primary, #1a1a1a);
-      padding: 0.4rem 1rem;
-      margin-bottom: 1.5rem;
-    }
-    .featured-article__title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2rem, 4vw, 3.5rem);
-      font-weight: 400;
-      line-height: 1.15;
-      margin-bottom: 1.5rem;
-    }
-    .featured-article__excerpt {
-      font-family: 'Inter', sans-serif;
-      font-size: 1rem;
-      line-height: 1.8;
-      opacity: 0.7;
-      margin-bottom: 2rem;
-    }
-    .featured-article__meta {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 0.7rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      opacity: 0.5;
-    }
-
-    .journal-filters {
-      padding: 4rem 2rem 2rem;
-      max-width: 1400px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-    }
-    .journal-filters__label {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 0.65rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      opacity: 0.4;
-      margin-right: 1rem;
-    }
-    .journal-filter-btn {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 0.65rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      background: none;
-      border: 1px solid rgba(26, 26, 26, 0.15);
-      padding: 0.5rem 1.2rem;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      color: inherit;
-    }
-    .journal-filter-btn:hover,
-    .journal-filter-btn.active {
-      background: var(--primary, #1a1a1a);
-      color: var(--bg, #f5f0eb);
-      border-color: var(--primary, #1a1a1a);
-    }
-
-    .journal-grid {
-      padding: 2rem 2rem 8rem;
-      max-width: 1400px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 3rem;
-    }
-    .journal-card {
-      display: flex;
-      flex-direction: column;
-    }
-    .journal-card__image-wrap {
-      overflow: hidden;
-      aspect-ratio: 16 / 10;
-      position: relative;
-    }
-    .journal-card__image-wrap img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
-    .journal-card:hover .journal-card__image-wrap img {
-      transform: scale(1.05);
-    }
-    .journal-card__tag {
-      display: inline-block;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 0.55rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      border: 1px solid rgba(26, 26, 26, 0.2);
-      padding: 0.35rem 0.8rem;
-      margin-bottom: 1.2rem;
-      width: fit-content;
-    }
-    .journal-card__title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.6rem;
-      font-weight: 400;
-      line-height: 1.25;
-      margin-bottom: 0.8rem;
-      transition: opacity 0.3s ease;
-    }
-    .journal-card:hover .journal-card__title {
-      opacity: 0.7;
-    }
-    .journal-card__excerpt {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.9rem;
-      line-height: 1.7;
-      opacity: 0.6;
-      margin-bottom: 1.2rem;
-    }
-    .journal-card__meta {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 0.6rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      opacity: 0.4;
-      margin-top: auto;
-    }
-    .journal-card__meta-divider {
-      width: 3px;
-      height: 3px;
-      border-radius: 50%;
-      background: currentColor;
-      opacity: 0.4;
-    }
-
-    @media (max-width: 768px) {
-      .featured-article__inner {
-        grid-template-columns: 1fr;
-      }
-      .journal-grid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-      }
-      .journal-filters {
-        gap: 0.4rem;
-      }
-    }
-  </style>
+  <title>Journal — Muskan Studio</title>
+  <meta name="description" content="Stories from the atelier — design process, fashion insights, and behind-the-scenes.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230d0d0d'/><text x='16' y='22' font-family='serif' font-size='18' fill='%23d4af37' text-anchor='middle'>M</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Skip Link -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-
-  <!-- Preloader -->
-  <div class="preloader" id="preloader" aria-hidden="true">
-    <div class="preloader__reveal"></div>
-    <div class="preloader__logo">Muskan</div>
-    <div class="preloader__line"></div>
-    <div class="preloader__counter">0</div>
-    <div class="preloader__quote">"Fashion is the armour to survive the reality of everyday life."</div>
-  </div>
-
-  <!-- Custom Cursor -->
-  <div class="cursor" id="cursor" aria-hidden="true">
-    <span class="cursor__text"></span>
-  </div>
-  <div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
-
-  <!-- Page Transition -->
-  <div class="page-transition" id="pageTransition" aria-hidden="true">
-    <div class="page-transition__overlay"></div>
-    <div class="page-transition__line"></div>
-  </div>
-
-  <!-- Navigation -->
-  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
-    <a href="index.html" class="nav__logo" aria-label="Muskan Studio Home">Muskan<span>.</span></a>
-    <div class="nav__right">
-      <span class="nav__location font-number" style="font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--primary);opacity:0.6">Paris / Mumbai</span>
-      <button class="nav__menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menuOverlay">
-        <span></span>
-        <span class="font-number" style="font-size:0.65rem;letter-spacing:0.1em">Menu</span>
-      </button>
+  <nav class="nav nav--dark">
+    <a href="index.html" class="nav__logo">Muskan<span>.</span></a>
+    <div class="nav__links">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="portfolio.html">Portfolio</a>
+      <a href="gallery.html">Gallery</a><a href="blog.html" class="active">Journal</a><a href="contact.html">Contact</a>
     </div>
+    <button class="nav__burger" aria-label="Open menu"><span></span><span></span><span></span></button>
   </nav>
-
-  <!-- Fullscreen Menu Overlay -->
-  <div class="menu-overlay" id="menuOverlay" role="dialog" aria-label="Navigation menu" aria-hidden="true">
-    <div class="menu-overlay__bg-text" aria-hidden="true">Muskan</div>
-    <div class="menu-overlay__left">
-      <div class="menu-overlay__nav-item">
-        <a href="index.html" class="menu-overlay__link" data-cursor="View"><span class="menu-overlay__link-number font-number">01</span> Home</a>
-      </div>
-      <div class="menu-overlay__nav-item">
-        <a href="about.html" class="menu-overlay__link" data-cursor="View"><span class="menu-overlay__link-number font-number">02</span> About</a>
-      </div>
-      <div class="menu-overlay__nav-item">
-        <a href="portfolio.html" class="menu-overlay__link" data-cursor="View"><span class="menu-overlay__link-number font-number">03</span> Portfolio</a>
-      </div>
-      <div class="menu-overlay__nav-item">
-        <a href="gallery.html" class="menu-overlay__link" data-cursor="View"><span class="menu-overlay__link-number font-number">04</span> Gallery</a>
-      </div>
-      <div class="menu-overlay__nav-item">
-        <a href="contact.html" class="menu-overlay__link" data-cursor="View"><span class="menu-overlay__link-number font-number">05</span> Contact</a>
-      </div>
-      <div class="menu-overlay__nav-item">
-        <a href="blog.html" class="menu-overlay__link" data-cursor="View"><span class="menu-overlay__link-number font-number">06</span> Journal</a>
-      </div>
-    </div>
-    <div class="menu-overlay__right">
-      <div class="menu-overlay__info">
-        <div class="menu-overlay__info-label font-number">Get in touch</div>
-        <div class="menu-overlay__info-value">studio@muskan.studio</div>
-      </div>
-      <div class="menu-overlay__info" style="margin-top:2rem">
-        <div class="menu-overlay__info-label font-number">Based in</div>
-        <div class="menu-overlay__info-value">Paris, France &amp; Mumbai, India</div>
-      </div>
-      <div class="menu-overlay__social">
-        <a href="https://www.instagram.com/muskan.studio" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.pinterest.com/muskanstudio" target="_blank" rel="noopener">Pinterest</a>
-        <a href="https://www.behance.net/muskanstudio" target="_blank" rel="noopener">Behance</a>
-        <a href="https://www.linkedin.com/in/muskan" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </div>
+  <div class="mobile-menu">
+    <button class="mobile-menu__close" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="portfolio.html">Portfolio</a>
+    <a href="gallery.html">Gallery</a><a href="blog.html">Journal</a><a href="contact.html">Contact</a>
   </div>
 
-  <!-- Main Content -->
-  <main id="main-content">
+  <section class="page-hero page-hero--blog">
+    <div class="container"><h1 class="page-hero__title">Journal</h1><p class="page-hero__sub">Stories from the Atelier</p></div>
+  </section>
 
-    <!-- Journal Hero -->
-    <section class="journal-hero" aria-label="Journal hero">
-      <div class="journal-hero__number font-number" data-reveal>14 — Journal</div>
-      <h1 class="journal-hero__title" data-reveal>Journal</h1>
-      <p class="journal-hero__subtitle" data-reveal>Stories from the world of fashion</p>
-      <div class="journal-hero__line" aria-hidden="true"></div>
-    </section>
-
-    <!-- Featured Article -->
-    <section class="featured-article" aria-label="Featured article">
-      <div class="featured-article__inner" data-reveal>
-        <div class="featured-article__image-wrap" data-cursor="Read">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1200&q=80" alt="Intricate hand embroidery on haute couture fabric showing centuries-old craftsmanship techniques" loading="eager" width="1200" height="750">
-        </div>
-        <div>
-          <div class="featured-article__label font-number">Featured Story</div>
-          <span class="featured-article__tag">Design</span>
-          <h2 class="featured-article__title">The Art of Hand Embroidery</h2>
-          <p class="featured-article__excerpt">Exploring the centuries-old craft that defines haute couture — from the ateliers of Paris to the artisan villages of India, where every stitch carries the weight of tradition and the promise of beauty.</p>
-          <div class="featured-article__meta font-number">
-            <span>July 2026</span>
-            <span>12 min read</span>
-            <span>By Muskan</span>
+  <section class="section">
+    <div class="container">
+      <div class="blog-grid">
+        <article class="blog-card blog-card--featured">
+          <div class="blog-card__img"><img src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=900&q=80" alt="Behind the seams" loading="lazy"></div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta"><span class="blog-card__date">June 15, 2026</span><span class="blog-card__cat">Behind the Seams</span></div>
+            <h2 class="blog-card__title">Behind the Seams: Creating Éclat</h2>
+            <p class="blog-card__desc">A deep dive into the 600 hours of hand-embroidery that brought the Éclat collection to life — from the first sketch to the final fitting at our Paris atelier.</p>
+            <a href="#" class="btn btn--ghost btn--pill">Read More</a>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Category Filters -->
-    <div class="journal-filters" role="tablist" aria-label="Filter articles by category">
-      <span class="journal-filters__label font-number">Filter</span>
-      <button class="journal-filter-btn active" role="tab" aria-selected="true" data-filter="all">All</button>
-      <button class="journal-filter-btn" role="tab" aria-selected="false" data-filter="design">Design</button>
-      <button class="journal-filter-btn" role="tab" aria-selected="false" data-filter="fashion">Fashion</button>
-      <button class="journal-filter-btn" role="tab" aria-selected="false" data-filter="inspiration">Inspiration</button>
-      <button class="journal-filter-btn" role="tab" aria-selected="false" data-filter="behind-the-scenes">Behind the Scenes</button>
-      <button class="journal-filter-btn" role="tab" aria-selected="false" data-filter="press">Press</button>
-    </div>
-
-    <!-- Article Grid -->
-    <section class="journal-grid" aria-label="Journal articles">
-
-      <!-- Article 1 -->
-      <article class="journal-card" data-reveal data-category="design">
-        <div class="journal-card__image-wrap" data-cursor="Read">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=700&q=80" alt="Hand embroidery artisan carefully stitching intricate floral patterns onto silk haute couture fabric" loading="lazy" width="700" height="438">
-        </div>
-        <div style="padding-top:1.5rem">
-          <span class="journal-card__tag">Design</span>
-          <h3 class="journal-card__title">The Art of Hand Embroidery</h3>
-          <p class="journal-card__excerpt">Exploring the centuries-old craft that defines haute couture</p>
-          <div class="journal-card__meta font-number">
-            <span>July 2026</span>
-            <span class="journal-card__meta-divider" aria-hidden="true"></span>
-            <span>12 min read</span>
-            <span class="journal-card__meta-divider" aria-hidden="true"></span>
-            <span>By Muskan</span>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__img"><img src="https://images.unsplash.com/photo-1518622358385-8ea7d0794bf6?w=600&q=80" alt="Couture details" loading="lazy"></div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta"><span class="blog-card__date">May 28, 2026</span><span class="blog-card__cat">Craft Notes</span></div>
+            <h2 class="blog-card__title">The Poetry of a Single Stitch</h2>
+            <p class="blog-card__desc">Why we believe that true luxury lives in the invisible details — the ones only the wearer knows about.</p>
+            <a href="#" class="btn btn--ghost btn--pill">Read More</a>
           </div>
-        </div>
-      </article>
-
-      <!-- Article 2 -->
-      <article class="journal-card" data-reveal data-category="press">
-        <div class="journal-card__image-wrap" data-cursor="Read">
-          <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=700&q=80" alt="Models walking the runway at Paris Fashion Week showcasing the Spring 2026 collection under dramatic lighting" loading="lazy" width="700" height="438">
-        </div>
-        <div style="padding-top:1.5rem">
-          <span class="journal-card__tag">Press</span>
-          <h3 class="journal-card__title">Paris Fashion Week: Spring 2026 Highlights</h3>
-          <p class="journal-card__excerpt">Our debut collection and the moments that made it unforgettable</p>
-          <div class="journal-card__meta font-number">
-            <span>June 2026</span>
-            <span class="journal-card__meta-divider" aria-hidden="true"></span>
-            <span>8 min read</span>
-            <span class="journal-card__meta-divider" aria-hidden="true"></span>
-            <span>By Muskan</span>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__img"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=600&q=80" alt="Fashion week" loading="lazy"></div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta"><span class="blog-card__date">April 10, 2026</span><span class="blog-card__cat">Fashion Week</span></div>
+            <h2 class="blog-card__title">Paris Fashion Week: A Personal Reflection</h2>
+            <p class="blog-card__desc">Muskan shares her thoughts on presenting Noir Absolu at the runway — the nerves, the magic, and the moments in between.</p>
+            <a href="#" class="btn btn--ghost btn--pill">Read More</a>
           </div>
-        </div>
-      </article>
-
-      <!-- Article 3 -->
-      <article class="journal-card" data-reveal data-category="fashion">
-        <div class="journal-card__image-wrap" data-cursor="Read">
-          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=700&q=80" alt="Sustainably sourced luxury fabrics draped elegantly showcasing responsible fashion sourcing practices" loading="lazy" width="700" height="438">
-        </div>
-        <div style="padding-top:1.5rem">
-          <span class="journal-card__tag">Fashion</span>
-          <h3 class="journal-card__title">Sustainable Luxury: Our Commitment</h3>
-          <p class="journal-card__excerpt">How we're redefining luxury through responsible sourcing and artisanal preservation</p>
-          <div class="journal-card__meta font-number">
-            <span>May 2026</span>
-            <span class="journal-card__meta-divider" aria-hidden="true"></span>
-            <span>10 min read</span>
-            <span class="journal-card__meta-divider" aria-hidden="true"></span>
-            <span>By Muskan</span>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__img"><img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=600&q=80" alt="Textiles" loading="lazy"></div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta"><span class="blog-card__date">March 5, 2026</span><span class="blog-card__cat">Heritage</span></div>
+            <h2 class="blog-card__title">Banarasi Weaving: Preserving an Ancient Craft</h2>
+            <p class="blog-card__desc">Our partnership with artisan cooperatives in Varanasi and what it means for the future of luxury fashion.</p>
+            <a href="#" class="btn btn--ghost btn--pill">Read More</a>
           </div>
-        </div>
-      </article>
-
-      <!-- Article 4 -->
-      <article class="journal-card" data-reveal data-category="behind-the-scenes">
-        <div class="journal-card__image-wrap" data-cursor="Read">
-          <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=700&q=80" alt="Behind the scenes in the atelier showing the creation process of the Éclat collection with fabric and sketches" loading="lazy" width="700" height="438">
-        </div>
-        <div style="padding-top:1.5rem">
-          <span class="journal-card__tag">Behind the Scenes</span>
-          <h3 class="journal-card__title">Behind the Seams: Creating Éclat</h3>
-          <p class="journal-card__excerpt">A journey through the 200 hours that brought our latest collection to life</p>
-          <div class="journal-card__meta font-number">
-            <span>April 2026</span>
-            <span class="journal-card__meta-divider" aria-hidden="true"></span>
-            <span>15 min read</span>
-            <span class="journal-card__meta-divider" aria-hidden="true"></span>
-            <span>By Muskan</span>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__img"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80" alt="Atelier" loading="lazy"></div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta"><span class="blog-card__date">February 18, 2026</span><span class="blog-card__cat">Atelier Life</span></div>
+            <h2 class="blog-card__title">A Day in the Muskan Atelier</h2>
+            <p class="blog-card__desc">From the first espresso to the last fitting — a glimpse into the rhythm of our Paris studio.</p>
+            <a href="#" class="btn btn--ghost btn--pill">Read More</a>
           </div>
-        </div>
-      </article>
-
-      <!-- Article 5 -->
-      <article class="journal-card" data-reveal data-category="design">
-        <div class="journal-card__image-wrap" data-cursor="Read">
-          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=700&q=80" alt="Fashion model wearing a colour-blocked outfit demonstrating the emotional impact of colour theory in fashion design" loading="lazy" width="700" height="438">
-        </div>
-        <div style="padding-top:1.5rem">
-          <span class="journal-card__tag">Design</span>
-          <h3 class="journal-card__title">Colour Theory in Fashion</h3>
-          <p class="journal-card__excerpt">Understanding how colour psychology shapes the emotional landscape of a collection</p>
-          <div class="journal-card__meta font-number">
-            <span>March 2026</span>
-            <span class="journal-card__meta-divider" aria-hidden="true"></span>
-            <span>7 min read</span>
-            <span class="journal-card__meta-divider" aria-hidden="true"></span>
-            <span>By Muskan</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Article 6 -->
-      <article class="journal-card" data-reveal data-category="inspiration">
-        <div class="journal-card__image-wrap" data-cursor="Read">
-          <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=700&q=80" alt="Fashion editorial showcasing the influence of traditional Indian textiles on global luxury fashion trends" loading="lazy" width="700" height="438">
-        </div>
-        <div style="padding-top:1.5rem">
-          <span class="journal-card__tag">Inspiration</span>
-          <h3 class="journal-card__title">The Future of Indian Textiles</h3>
-          <p class="journal-card__excerpt">How traditional Indian weaving techniques are influencing global luxury fashion</p>
-          <div class="journal-card__meta font-number">
-            <span>February 2026</span>
-            <span class="journal-card__meta-divider" aria-hidden="true"></span>
-            <span>9 min read</span>
-            <span class="journal-card__meta-divider" aria-hidden="true"></span>
-            <span>By Muskan</span>
-          </div>
-        </div>
-      </article>
-
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer" role="contentinfo">
-    <div class="footer__top">
-      <div>
-        <div class="footer__brand-name">Muskan<span>.</span></div>
-        <p class="footer__brand-desc">Luxury fashion design at the intersection of Parisian haute couture and Indian artisanal heritage. Crafting timeless elegance since 2017.</p>
-        <form class="footer__newsletter" aria-label="Newsletter signup">
-          <input type="email" class="footer__newsletter-input" placeholder="Your email" aria-label="Email for newsletter">
-          <button type="submit" class="footer__newsletter-btn">Subscribe</button>
-        </form>
-      </div>
-      <div>
-        <h3 class="footer__col-title">Navigation</h3>
-        <div class="footer__links">
-          <a href="index.html" class="footer__link">Home</a>
-          <a href="about.html" class="footer__link">About</a>
-          <a href="portfolio.html" class="footer__link">Portfolio</a>
-          <a href="gallery.html" class="footer__link">Gallery</a>
-          <a href="contact.html" class="footer__link">Contact</a>
-          <a href="blog.html" class="footer__link">Journal</a>
-        </div>
-      </div>
-      <div>
-        <h3 class="footer__col-title">Services</h3>
-        <div class="footer__links">
-          <a href="services.html" class="footer__link">Fashion Design</a>
-          <a href="services.html" class="footer__link">Creative Direction</a>
-          <a href="services.html" class="footer__link">Luxury Branding</a>
-          <a href="services.html" class="footer__link">Editorial Styling</a>
-          <a href="services.html" class="footer__link">Fashion Illustration</a>
-          <a href="services.html" class="footer__link">Consultation</a>
-        </div>
-      </div>
-      <div>
-        <h3 class="footer__col-title">Connect</h3>
-        <div class="footer__links">
-          <a href="https://www.instagram.com/muskan.studio" target="_blank" rel="noopener" class="footer__link">Instagram</a>
-          <a href="https://www.pinterest.com/muskanstudio" target="_blank" rel="noopener" class="footer__link">Pinterest</a>
-          <a href="https://www.behance.net/muskanstudio" target="_blank" rel="noopener" class="footer__link">Behance</a>
-          <a href="https://www.linkedin.com/in/muskan" target="_blank" rel="noopener" class="footer__link">LinkedIn</a>
-          <a href="mailto:studio@muskan.studio" class="footer__link">Email</a>
-        </div>
+        </article>
       </div>
     </div>
-    <div class="footer__bottom">
-      <p class="footer__copyright">&copy; 2026 Muskan Studio. All rights reserved.</p>
-      <a href="#main-content" class="footer__back-to-top" data-cursor="Scroll">Back to Top &uarr;</a>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <p>&copy; 2026 Muskan Studio. All rights reserved.</p>
+        <a href="index.html" class="footer__top-link">Home ↑</a>
+      </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script type="module" src="src/js/app.js"></script>
-
+  <script src="js/main.js"></script>
 </body>
 </html>

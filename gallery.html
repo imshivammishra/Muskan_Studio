@@ -3,405 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery — Muskan | Fashion Photography & Editorial</title>
-  <meta name="description" content="A curated collection of fashion photography, editorial shoots, runway moments, sketches, and behind-the-scenes glimpses from Muskan Studio.">
-  <meta name="keywords" content="Muskan Studio, fashion gallery, editorial photography, runway, fashion sketches, luxury fashion">
-  <meta name="robots" content="index, follow">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Gallery — Muskan | Fashion Photography & Editorial">
-  <meta property="og:description" content="A curated collection of fashion photography, editorial shoots, runway moments, and behind-the-scenes glimpses.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://muskandesigns.com/gallery.html">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=1200&q=80">
-  <meta property="og:site_name" content="Muskan Studio">
-
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Gallery — Muskan | Fashion Photography & Editorial">
-  <meta name="twitter:description" content="A curated collection of fashion photography, editorial shoots, runway moments, and behind-the-scenes glimpses.">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=1200&q=80">
-
-  <link rel="stylesheet" href="src/css/main.css">
-  <script type="module" src="src/js/app.js" defer></script>
+  <title>Gallery — Muskan Studio</title>
+  <meta name="description" content="Explore Muskan's editorial and collection imagery in a curated gallery.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230d0d0d'/><text x='16' y='22' font-family='serif' font-size='18' fill='%23d4af37' text-anchor='middle'>M</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Preloader -->
-  <div class="preloader" id="preloader">
-    <div class="preloader__inner">
-      <span class="preloader__text">Muskan</span>
-      <div class="preloader__bar">
-        <div class="preloader__progress"></div>
+  <nav class="nav nav--dark">
+    <a href="index.html" class="nav__logo">Muskan<span>.</span></a>
+    <div class="nav__links">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="portfolio.html">Portfolio</a>
+      <a href="gallery.html" class="active">Gallery</a><a href="blog.html">Journal</a><a href="contact.html">Contact</a>
+    </div>
+    <button class="nav__burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu">
+    <button class="mobile-menu__close" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="portfolio.html">Portfolio</a>
+    <a href="gallery.html">Gallery</a><a href="blog.html">Journal</a><a href="contact.html">Contact</a>
+  </div>
+
+  <section class="page-hero page-hero--gallery">
+    <div class="container"><h1 class="page-hero__title">Gallery</h1><p class="page-hero__sub">Editorial & Collection Imagery</p></div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="editorial">Editorial</button>
+        <button class="filter-btn" data-filter="couture">Couture</button>
+        <button class="filter-btn" data-filter="bridal">Bridal</button>
+        <button class="filter-btn" data-filter="campaign">Campaign</button>
+      </div>
+      <div class="masonry-grid">
+        <div class="masonry-item" data-cat="couture"><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&q=80" alt="Couture" loading="lazy"></div>
+        <div class="masonry-item masonry-item--tall" data-cat="editorial"><img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&q=80" alt="Editorial" loading="lazy"></div>
+        <div class="masonry-item" data-cat="bridal"><img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&q=80" alt="Bridal" loading="lazy"></div>
+        <div class="masonry-item masonry-item--wide" data-cat="campaign"><img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=800&q=80" alt="Campaign" loading="lazy"></div>
+        <div class="masonry-item" data-cat="editorial"><img src="https://images.unsplash.com/photo-1518622358385-8ea7d0794bf6?w=600&q=80" alt="Editorial" loading="lazy"></div>
+        <div class="masonry-item masonry-item--tall" data-cat="couture"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=600&q=80" alt="Couture" loading="lazy"></div>
+        <div class="masonry-item" data-cat="bridal"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&q=80" alt="Bridal" loading="lazy"></div>
+        <div class="masonry-item" data-cat="campaign"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=80" alt="Campaign" loading="lazy"></div>
+        <div class="masonry-item masonry-item--wide" data-cat="editorial"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=800&q=80" alt="Editorial" loading="lazy"></div>
+        <div class="masonry-item" data-cat="couture"><img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=600&q=80" alt="Couture" loading="lazy"></div>
+        <div class="masonry-item" data-cat="bridal"><img src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=600&q=80" alt="Bridal" loading="lazy"></div>
+        <div class="masonry-item masonry-item--tall" data-cat="campaign"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=600&q=80" alt="Campaign" loading="lazy"></div>
       </div>
     </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lb-x" id="lb-x">&times;</button>
+    <button class="lb-arrow lb-prev" id="lb-prev">&lsaquo;</button>
+    <img class="lb-img" id="lb-img" src="" alt="Preview">
+    <button class="lb-arrow lb-next" id="lb-next">&rsaquo;</button>
   </div>
 
-  <!-- Skip Link -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-
-  <!-- Custom Cursor -->
-  <div class="cursor" id="cursor">
-    <div class="cursor__dot"></div>
-    <div class="cursor__circle"></div>
-    <span class="cursor__label" id="cursor-label"></span>
-  </div>
-
-  <!-- Page Transition -->
-  <div class="page-transition" id="page-transition">
-    <div class="page-transition__inner"></div>
-  </div>
-
-  <!-- Navigation -->
-  <header class="nav" id="nav">
-    <div class="nav__container">
-      <a href="index.html" class="nav__logo" data-cursor="pointer">
-        <span class="nav__logo-text">Muskan<span class="nav__logo-dot">.</span></span>
-      </a>
-
-      <nav class="nav__links" aria-label="Main navigation">
-        <a href="index.html" class="nav__link" data-cursor="pointer">Home</a>
-        <a href="about.html" class="nav__link" data-cursor="pointer">About</a>
-        <a href="portfolio.html" class="nav__link" data-cursor="pointer">Portfolio</a>
-        <a href="gallery.html" class="nav__link nav__link--active" data-cursor="pointer">Gallery</a>
-        <a href="contact.html" class="nav__link" data-cursor="pointer">Contact</a>
-        <a href="blog.html" class="nav__link" data-cursor="pointer">Journal</a>
-      </nav>
-
-      <button class="nav__menu-btn" id="menu-toggle" data-cursor="pointer" aria-label="Toggle menu">
-        <span class="nav__menu-btn-line"></span>
-        <span class="nav__menu-btn-line"></span>
-        <span class="nav__menu-btn-line"></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- Menu Overlay -->
-  <div class="menu-overlay" id="menu-overlay" aria-hidden="true">
-    <div class="menu-overlay__inner">
-      <nav class="menu-overlay__nav" aria-label="Overlay navigation">
-        <a href="index.html" class="menu-overlay__link" data-cursor="pointer">
-          <span class="menu-overlay__link-number">01</span>
-          <span class="menu-overlay__link-text">Home</span>
-        </a>
-        <a href="about.html" class="menu-overlay__link" data-cursor="pointer">
-          <span class="menu-overlay__link-number">02</span>
-          <span class="menu-overlay__link-text">About</span>
-        </a>
-        <a href="portfolio.html" class="menu-overlay__link" data-cursor="pointer">
-          <span class="menu-overlay__link-number">03</span>
-          <span class="menu-overlay__link-text">Portfolio</span>
-        </a>
-        <a href="gallery.html" class="menu-overlay__link" data-cursor="pointer">
-          <span class="menu-overlay__link-number">04</span>
-          <span class="menu-overlay__link-text">Gallery</span>
-        </a>
-        <a href="contact.html" class="menu-overlay__link" data-cursor="pointer">
-          <span class="menu-overlay__link-number">05</span>
-          <span class="menu-overlay__link-text">Contact</span>
-        </a>
-        <a href="blog.html" class="menu-overlay__link" data-cursor="pointer">
-          <span class="menu-overlay__link-number">06</span>
-          <span class="menu-overlay__link-text">Journal</span>
-        </a>
-      </nav>
-      <div class="menu-overlay__footer">
-        <p class="menu-overlay__tagline">Crafting Elegance, Stitch by Stitch</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Main Content -->
-  <main id="main-content">
-
-    <!-- Hero Section -->
-    <section class="gallery-hero">
-      <div class="container">
-        <div class="gallery-hero__content">
-          <span class="section-label">Gallery</span>
-          <h1 class="gallery-hero__title">Gallery</h1>
-          <p class="gallery-hero__subtitle">A curated collection of moments</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Filter Bar -->
-    <section class="gallery-filter">
-      <div class="container">
-        <div class="gallery-filter__bar">
-          <button class="gallery-filter__btn gallery-filter__btn--active" data-filter="all" data-cursor="pointer">All</button>
-          <button class="gallery-filter__btn" data-filter="editorial" data-cursor="pointer">Editorial</button>
-          <button class="gallery-filter__btn" data-filter="runway" data-cursor="pointer">Runway</button>
-          <button class="gallery-filter__btn" data-filter="bts" data-cursor="pointer">Behind the Scenes</button>
-          <button class="gallery-filter__btn" data-filter="sketches" data-cursor="pointer">Sketches</button>
-          <button class="gallery-filter__btn" data-filter="details" data-cursor="pointer">Details</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Masonry Gallery Grid -->
-    <section class="gallery-grid" id="gallery-grid">
-      <div class="container">
-        <div class="masonry" id="masonry">
-
-          <!-- Image 1 - Editorial (tall) -->
-          <div class="masonry__item masonry__item--tall" data-category="editorial" data-index="0">
-            <a href="#" class="masonry__link" data-cursor="Open">
-              <img
-                src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=600&q=75"
-                alt="Fashion editorial shoot in natural light"
-                loading="lazy"
-                class="masonry__img"
-              >
-              <div class="masonry__overlay">
-                <span class="masonry__category">Editorial</span>
-                <h3 class="masonry__title">Natural Light Editorial</h3>
-              </div>
-            </a>
-          </div>
-
-          <!-- Image 2 - Editorial (wide) -->
-          <div class="masonry__item masonry__item--wide" data-category="editorial" data-index="1">
-            <a href="#" class="masonry__link" data-cursor="Open">
-              <img
-                src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&q=75"
-                alt="High fashion editorial composition"
-                loading="lazy"
-                class="masonry__img"
-              >
-              <div class="masonry__overlay">
-                <span class="masonry__category">Editorial</span>
-                <h3 class="masonry__title">High Fashion Composition</h3>
-              </div>
-            </a>
-          </div>
-
-          <!-- Image 3 - Details -->
-          <div class="masonry__item" data-category="details" data-index="2">
-            <a href="#" class="masonry__link" data-cursor="Open">
-              <img
-                src="https://images.unsplash.com/photo-1518622358385-8ea7d0794bf6?w=600&q=75"
-                alt="Intricate fabric details and textures"
-                loading="lazy"
-                class="masonry__img"
-              >
-              <div class="masonry__overlay">
-                <span class="masonry__category">Details</span>
-                <h3 class="masonry__title">Fabric Textures</h3>
-              </div>
-            </a>
-          </div>
-
-          <!-- Image 4 - Runway (tall) -->
-          <div class="masonry__item masonry__item--tall" data-category="runway" data-index="3">
-            <a href="#" class="masonry__link" data-cursor="Open">
-              <img
-                src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600&q=75"
-                alt="Runway model showcasing evening wear"
-                loading="lazy"
-                class="masonry__img"
-              >
-              <div class="masonry__overlay">
-                <span class="masonry__category">Runway</span>
-                <h3 class="masonry__title">Evening Wear Collection</h3>
-              </div>
-            </a>
-          </div>
-
-          <!-- Image 5 - Runway -->
-          <div class="masonry__item" data-category="runway" data-index="4">
-            <a href="#" class="masonry__link" data-cursor="Open">
-              <img
-                src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=600&q=75"
-                alt="Fashion runway moment in motion"
-                loading="lazy"
-                class="masonry__img"
-              >
-              <div class="masonry__overlay">
-                <span class="masonry__category">Runway</span>
-                <h3 class="masonry__title">Runway in Motion</h3>
-              </div>
-            </a>
-          </div>
-
-          <!-- Image 6 - Editorial (wide) -->
-          <div class="masonry__item masonry__item--wide" data-category="editorial" data-index="5">
-            <a href="#" class="masonry__link" data-cursor="Open">
-              <img
-                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600&q=75"
-                alt="Couture editorial portrait"
-                loading="lazy"
-                class="masonry__img"
-              >
-              <div class="masonry__overlay">
-                <span class="masonry__category">Editorial</span>
-                <h3 class="masonry__title">Couture Portrait</h3>
-              </div>
-            </a>
-          </div>
-
-          <!-- Image 7 - Details (tall) -->
-          <div class="masonry__item masonry__item--tall" data-category="details" data-index="6">
-            <a href="#" class="masonry__link" data-cursor="Open">
-              <img
-                src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=600&q=75"
-                alt="Close-up of embroidery and beadwork"
-                loading="lazy"
-                class="masonry__img"
-              >
-              <div class="masonry__overlay">
-                <span class="masonry__category">Details</span>
-                <h3 class="masonry__title">Embroidery & Beadwork</h3>
-              </div>
-            </a>
-          </div>
-
-          <!-- Image 8 - BTS -->
-          <div class="masonry__item" data-category="bts" data-index="7">
-            <a href="#" class="masonry__link" data-cursor="Open">
-              <img
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=75"
-                alt="Behind the scenes at the studio"
-                loading="lazy"
-                class="masonry__img"
-              >
-              <div class="masonry__overlay">
-                <span class="masonry__category">Behind the Scenes</span>
-                <h3 class="masonry__title">Studio Session</h3>
-              </div>
-            </a>
-          </div>
-
-          <!-- Image 9 - Sketches -->
-          <div class="masonry__item" data-category="sketches" data-index="8">
-            <a href="#" class="masonry__link" data-cursor="Open">
-              <img
-                src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&q=75"
-                alt="Fashion design sketches and illustrations"
-                loading="lazy"
-                class="masonry__img"
-              >
-              <div class="masonry__overlay">
-                <span class="masonry__category">Sketches</span>
-                <h3 class="masonry__title">Design Illustrations</h3>
-              </div>
-            </a>
-          </div>
-
-          <!-- Image 10 - Editorial (tall) -->
-          <div class="masonry__item masonry__item--tall" data-category="editorial" data-index="9">
-            <a href="#" class="masonry__link" data-cursor="Open">
-              <img
-                src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=75"
-                alt="Summer editorial fashion spread"
-                loading="lazy"
-                class="masonry__img"
-              >
-              <div class="masonry__overlay">
-                <span class="masonry__category">Editorial</span>
-                <h3 class="masonry__title">Summer Editorial</h3>
-              </div>
-            </a>
-          </div>
-
-          <!-- Image 11 - Runway -->
-          <div class="masonry__item" data-category="runway" data-index="10">
-            <a href="#" class="masonry__link" data-cursor="Open">
-              <img
-                src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&q=75"
-                alt="Runway finale look"
-                loading="lazy"
-                class="masonry__img"
-              >
-              <div class="masonry__overlay">
-                <span class="masonry__category">Runway</span>
-                <h3 class="masonry__title">Finale Look</h3>
-              </div>
-            </a>
-          </div>
-
-          <!-- Image 12 - BTS (wide) -->
-          <div class="masonry__item masonry__item--wide" data-category="bts" data-index="11">
-            <a href="#" class="masonry__link" data-cursor="Open">
-              <img
-                src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&q=75"
-                alt="Behind the scenes preparation for fashion show"
-                loading="lazy"
-                class="masonry__img"
-              >
-              <div class="masonry__overlay">
-                <span class="masonry__category">Behind the Scenes</span>
-                <h3 class="masonry__title">Show Preparation</h3>
-              </div>
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Lightbox / Fullscreen Viewer -->
-  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
-    <div class="lightbox__backdrop" id="lightbox-backdrop"></div>
-    <div class="lightbox__content">
-      <button class="lightbox__close" id="lightbox-close" data-cursor="pointer" aria-label="Close viewer">&times;</button>
-      <button class="lightbox__prev" id="lightbox-prev" data-cursor="pointer" aria-label="Previous image">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <polyline points="15 18 9 12 15 6"></polyline>
-        </svg>
-      </button>
-      <div class="lightbox__image-wrapper">
-        <img src="" alt="" class="lightbox__image" id="lightbox-image">
-      </div>
-      <button class="lightbox__next" id="lightbox-next" data-cursor="pointer" aria-label="Next image">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <polyline points="9 18 15 12 9 6"></polyline>
-        </svg>
-      </button>
-      <div class="lightbox__counter">
-        <span id="lightbox-current">1</span> / <span id="lightbox-total">12</span>
-      </div>
-      <div class="lightbox__caption" id="lightbox-caption"></div>
-    </div>
-  </div>
-
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer__inner">
-        <div class="footer__brand">
-          <a href="index.html" class="footer__logo" data-cursor="pointer">
-            <span class="footer__logo-text">Muskan<span class="footer__logo-dot">.</span></span>
-          </a>
-          <p class="footer__tagline">Crafting Elegance, Stitch by Stitch</p>
-        </div>
-        <div class="footer__nav">
-          <a href="index.html" class="footer__link" data-cursor="pointer">Home</a>
-          <a href="about.html" class="footer__link" data-cursor="pointer">About</a>
-          <a href="portfolio.html" class="footer__link" data-cursor="pointer">Portfolio</a>
-          <a href="gallery.html" class="footer__link footer__link--active" data-cursor="pointer">Gallery</a>
-          <a href="contact.html" class="footer__link" data-cursor="pointer">Contact</a>
-          <a href="blog.html" class="footer__link" data-cursor="pointer">Journal</a>
-        </div>
-        <div class="footer__social">
-          <a href="#" class="footer__social-link" data-cursor="pointer" aria-label="Instagram">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
-          </a>
-          <a href="#" class="footer__social-link" data-cursor="pointer" aria-label="Pinterest">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.25 2.67 7.9 6.44 9.34-.03-.82.01-1.8.21-2.69l1.41-5.99s-.35-.71-.35-1.76c0-1.65.96-2.88 2.15-2.88 1.02 0 1.51.76 1.51 1.68 0 1.02-.65 2.55-.99 3.97-.28 1.19.6 2.16 1.77 2.16 2.13 0 3.77-2.25 3.77-5.49 0-2.87-2.06-4.87-5-4.87-3.41 0-5.41 2.56-5.41 5.21 0 1.03.4 2.13.89 2.73.1.12.11.22.08.34l-.33 1.36c-.05.22-.18.27-.41.16-1.52-.71-2.47-2.93-2.47-4.72 0-3.84 2.79-7.37 8.03-7.37 4.22 0 7.5 3.01 7.5 7.02 0 4.19-2.64 7.56-6.31 7.56-1.23 0-2.39-.64-2.79-1.4l-.76 2.89c-.27 1.06-1.01 2.39-1.5 3.2C10.16 21.92 11.06 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
-          </a>
-          <a href="#" class="footer__social-link" data-cursor="pointer" aria-label="Twitter">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-        </div>
-      </div>
       <div class="footer__bottom">
         <p>&copy; 2026 Muskan Studio. All rights reserved.</p>
+        <a href="index.html" class="footer__top-link">Home ↑</a>
       </div>
     </div>
   </footer>
 
+  <script src="js/main.js"></script>
 </body>
 </html>
