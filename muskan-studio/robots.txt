@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://muskan.studio/sitemap.xml
+
+# Muskan Studio — Creative Design Studio
+# https://muskan.studio

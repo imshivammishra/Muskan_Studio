@@ -1,0 +1,104 @@
+/* ============================================
+   MUSKAN STUDIO — Components
+   ============================================ */
+
+/* Mobile Navigation Overlay */
+.nav-mobile-overlay {
+    display: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-text-secondary);
+}
+
+/* Smooth page transitions */
+.page-transition {
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+
+.page-transition.loaded {
+    opacity: 1;
+}
+
+/* Custom cursor dot (desktop only) */
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.15s ease-out, opacity 0.15s ease-out;
+    mix-blend-mode: difference;
+    display: none;
+}
+
+/* Decorative elements */
+.section-divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-border);
+}
+
+/* Loading skeleton */
+.skeleton {
+    background: linear-gradient(90deg, var(--color-bg-secondary) 25%, #EDE5D8 50%, var(--color-bg-secondary) 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: var(--border-radius-sm);
+}
+
+@keyframes skeleton-loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Page loading overlay */
+.page-loader {
+    position: fixed;
+    inset: 0;
+    background-color: var(--color-bg);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
+}
+
+.page-loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-content {
+    text-align: center;
+}
+
+.loader-logo {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--color-text);
+    animation: loaderFade 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes loaderFade {
+    from { opacity: 0.3; }
+    to { opacity: 1; }
+}
